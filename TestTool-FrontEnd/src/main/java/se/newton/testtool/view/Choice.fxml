@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.newton.testtool.controller.ChoiceController">
+    <children>
+        <Label fx:id="lblQuestion" layoutX="50.0" layoutY="110.0" prefHeight="70.0" prefWidth="700.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <CheckBox fx:id="chkAnswer1" layoutX="50.0" layoutY="228.0" mnemonicParsing="false" prefWidth="700.0" />
+        <CheckBox fx:id="chkAnswer2" layoutX="50.0" layoutY="256.0" mnemonicParsing="false" prefWidth="700.0" />
+        <CheckBox fx:id="chkAnswer3" layoutX="50.0" layoutY="286.0" mnemonicParsing="false" prefWidth="700.0" />
+        <CheckBox fx:id="chkAnswer4" layoutX="50.0" layoutY="320.0" mnemonicParsing="false" prefWidth="700.0" />
+        <Button fx:id="btnPrev" layoutX="50.0" layoutY="570.0" mnemonicParsing="false" text="Tillbaka" />
+        <Button fx:id="btnNext" layoutX="700.0" layoutY="570.0" mnemonicParsing="false" text="Nästa" />
+        <Label fx:id="lblPageNr" layoutX="383.0" layoutY="575.0" />
+    </children>
+</AnchorPane>

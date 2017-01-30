@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.newton.testtool.controller.TestWebService">
+   <children>
+      <Button fx:id="btn" layoutX="486.0" layoutY="630.0" mnemonicParsing="false" text="Button" />
+      <TextArea fx:id="txtArea" layoutX="158.0" layoutY="160.0" prefHeight="420.0" prefWidth="733.0" />
+      <Label layoutX="372.0" layoutY="46.0" prefHeight="67.0" prefWidth="247.0" text="Test WebService">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.newton.testtool.controller.CreateTestController">
+    <children>
+        <VBox prefHeight="640.0" prefWidth="800.0">
+            <children>
+                <VBox prefHeight="140.0">
+                    <children>
+                        <TableView fx:id="tblTest">
+                            <columns>
+                                <TableColumn fx:id="tId" maxWidth="50.0" prefWidth="50.0" text="ID" />
+                                <TableColumn fx:id="tTitle" maxWidth="200.0" prefWidth="200.0" text="Title" />
+                                <TableColumn fx:id="tTotalScore" maxWidth="60.0" prefWidth="60.0" text="Score" />
+                                <TableColumn fx:id="tShowAnswer" maxWidth="110.0" prefWidth="110.0" text="Show Answer" />
+                                <TableColumn fx:id="tGrade" prefWidth="55.0" text="Grade" />
+                                <TableColumn fx:id="tOpenDate" prefWidth="113.0" text="Open Date" />
+                                <TableColumn fx:id="tCloseDate" prefWidth="111.0" text="Close Date" />
+                                <TableColumn fx:id="tDone" maxWidth="60.0" prefWidth="60.0" text="Done" />
+                                <TableColumn fx:id="tTimer" maxWidth="80.0" text="Timer" />
+                            </columns>
+                        </TableView>
+                        <HBox prefHeight="16.0" prefWidth="760.0">
+                            <children>
+                                <TextField fx:id="txttTitle" prefHeight="31.0" prefWidth="299.0" promptText="Enter title..." />
+                                <TextField fx:id="txttOpenDate" prefHeight="31.0" prefWidth="145.0" promptText="Open Date..." />
+                                <TextField fx:id="txttCloseDate" prefHeight="31.0" prefWidth="133.0" promptText="Close Date..." />
+                                <CheckBox fx:id="chkShowAnswer" mnemonicParsing="false" prefHeight="21.0" prefWidth="126.0" text="Show Answer">
+                                    <HBox.margin>
+                                        <Insets top="5.0" />
+                                    </HBox.margin>
+                                </CheckBox>
+                                <Button fx:id="btntSave" mnemonicParsing="false" prefHeight="31.0" prefWidth="60.0" text="Save" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="240.0">
+                    <children>
+                        <TableView fx:id="tblQuestion">
+                            <columns>
+                                <TableColumn fx:id="qId" maxWidth="50.0" prefWidth="50.0" text="ID" />
+                                <TableColumn fx:id="qTitle" maxWidth="500.0" prefWidth="500.0" text="Title" />
+                                <TableColumn fx:id="qCategory" maxWidth="120.0" prefWidth="120.0" text="Category" />
+                                <TableColumn fx:id="qScore" maxWidth="100.0" prefWidth="100.0" text="Score" />
+                            </columns>
+                        </TableView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="txtqTitle" prefHeight="31.0" prefWidth="561.0" promptText="Enter title...." />
+                                <ComboBox fx:id="cbqCategory" prefWidth="150.0"  promptText="Select category...."/>
+                                <Button fx:id="btnqSave" mnemonicParsing="false" prefHeight="31.0" prefWidth="60.0" text="Save" />
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+                <VBox prefHeight="180.0">
+                    <children>
+                        <TableView fx:id="tblAnswer">
+                            <columns>
+                                <TableColumn fx:id="aId" maxWidth="50.0" prefWidth="50.0" text="ID" />
+                                <TableColumn fx:id="aTitle" maxWidth="400.0" prefWidth="400.0" text="Title" />
+                                <TableColumn fx:id="aAnsStudent" maxWidth="160.0" prefWidth="160.0" text="Answer By Student" />
+                                <TableColumn fx:id="aAnsTeacher" maxWidth="160.0" minWidth="0.0" prefWidth="160.0" text="Correct Answer" />
+                            </columns>
+                        </TableView>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <TextField fx:id="txtaTitle" prefHeight="31.0" prefWidth="569.0" promptText="Enter title...." />
+                                <TextField fx:id="txtaAnsTeacher" prefHeight="31.0" prefWidth="132.0" promptText="Enter Correct Answer...." />
+                                <Button fx:id="btnaSave" mnemonicParsing="false" prefHeight="31.0" prefWidth="60.0" text="Save" />
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                </VBox>
+                <HBox prefHeight="30.0">
+                    <children>
+                        <Button fx:id="btnMenu" mnemonicParsing="false" text="Hem" />
+                    </children>
+                    <padding>
+                        <Insets top="10.0" />
+                    </padding>
+                </HBox>
+            </children>
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+            </padding>
+        </VBox>
+    </children>
+</AnchorPane>

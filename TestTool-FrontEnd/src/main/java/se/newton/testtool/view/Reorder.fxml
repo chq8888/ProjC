@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.newton.testtool.controller.ReorderController">
+    <children>
+        <Label fx:id="lblQuestion" layoutX="50.0" layoutY="110.0" prefHeight="70.0" prefWidth="700.0">
+            <font><Font size="20.0" /></font>
+        </Label>
+        <ListView fx:id="lvUnOrder" layoutX="83.0" layoutY="220.0" prefHeight="200.0" prefWidth="250.0" />
+        <ListView fx:id="lvOrder" layoutX="463.0" layoutY="220.0" prefHeight="200.0" prefWidth="250.0" />
+        <Button fx:id="btnToRight" layoutX="378.0" layoutY="273.0" mnemonicParsing="false" text="&gt;" />
+        <Button fx:id="btnToLeft" layoutX="378.0" layoutY="331.0" mnemonicParsing="false" text="&lt;" />
+        <Button fx:id="btnPrev" layoutX="50.0" layoutY="570.0" mnemonicParsing="false" text="Tillbaka" />
+        <Button fx:id="btnNext" layoutX="700.0" layoutY="570.0" mnemonicParsing="false" text="Nästa" />
+        <Label fx:id="lblPageNr" layoutX="367.0" layoutY="575.0" prefHeight="17.0" prefWidth="66.0" />
+    </children>
+</AnchorPane>
